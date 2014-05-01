@@ -1,15 +1,20 @@
 Template.list.events({
-  'click .add': function () {
+
+  'click .add': function (e) {
     List.insert({
       name: "new",
     })
   },
-  'input .item': function (e) {
-    console.log(e);
+
+  'click .remove': function (e) {
     var id = e.currentTarget.dataset.id;
-    List.update({
-      _id: id,
-    }, {
+    List.remove(id)
+  },
+
+  'input .item': function (e) {
+    var id = e.currentTarget.dataset.id;
+    List.update(id,
+    {
       name: e.currentTarget.value
     });
   },

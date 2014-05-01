@@ -1,10 +1,16 @@
 <template name="list">
+
   <button class="add">+</button>
+
   <ul>
   {{#each this}}
     <li>
+
+      <button class="remove" data-id="{{ _id }}">x</button>
       <input class="item" value="{{ name }}" data-id="{{ _id }}" />
+    
     </li>
   {{/each}}
   </ul>
+
 </template>
