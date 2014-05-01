@@ -1,0 +1,10 @@
+<template name="stores">
+  <ul>
+    {{#each this }}
+    <li>
+      <h1>{{ name }} {{ price }}</h1>
+      <h2>{{ address }} ({{ distance }})</h2>
+    </li>
+    {{/each }}
+  </ul>
+</template>

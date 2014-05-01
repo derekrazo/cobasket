@@ -13,5 +13,8 @@ Meteor.startup(function () {
     this.route('list', {
       data: function () { return List.find(); }
     });
+    this.route('stores', {
+      data: function () { return Stores.find(); }
+    });
   });
 });
