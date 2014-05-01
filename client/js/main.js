@@ -1,5 +1,5 @@
 Meteor.startup(function(){
-	Router.addRoute('/', 'homeTemplate');
+	Router.addRoute('/', 'landingTemplate');
  
 	Router.run();
 });
