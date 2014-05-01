@@ -1,3 +1,10 @@
 <template name="list">
-  i'm a list yo
+  <button class="add">+</button>
+  <ul>
+  {{#each this}}
+    <li>
+      <input value="{{ name }}" />
+    </li>
+  {{/each}}
+  </ul>
 </template>
