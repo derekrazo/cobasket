@@ -1,7 +1,7 @@
 <template name="stores">
-  <ul>
+  <ul class="stores">
     {{#each this }}
-    <li>
+    <li class="store" data-id="{{ _id }}">
       <h1>{{ name }} {{ price }}</h1>
       <h2>{{ address }} ({{ distance }})</h2>
     </li>

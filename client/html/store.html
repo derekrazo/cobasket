@@ -1,0 +1,24 @@
+<template name="store">
+  <div class="store">
+    <h1>{{ name }}</h1>
+
+    <nav>
+      <button class="listMode">list view</button>
+      <button class="mapMode">map view</button>
+    </nav>
+
+    {{#if storeViewMode }}
+    {{> storeMap }}
+    {{else }}
+    {{> storeList }}
+    {{/if }}
+  </div>
+</template>
+
+<template name="storeList">
+  such list.
+</template>
+
+<template name="storeMap">
+  very map.
+</template>
