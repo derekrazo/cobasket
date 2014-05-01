@@ -14,4 +14,12 @@
   {{/each}}
   </ul>
 
+  {{> listFooter }}
+</template>
+
+<template name="listFooter">
+  <div class="footer-container">
+    <a href="{{pathFor 'stores'}}" id="byStore">Organize By Store</a>
+    <!--<a href="" id="arrow">^</a>-->
+  </div>
 </template>
