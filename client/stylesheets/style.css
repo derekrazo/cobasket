@@ -11,6 +11,7 @@ main {
 	width:100%;
 	background: url(./images/background_cat.png);
 	background-size: 100% 100%;
+
 }
 
 .landingImage {
@@ -31,6 +32,7 @@ main {
 	width: 100%;
 	height: 50px;
 	background-color: #035d67;
+	opacity: .9;
 
     display: -webkit-box;
     display: -moz-box;
@@ -113,7 +115,7 @@ main {
 .footer-container > a {
 	position: relative;
 	top: 15%;	
-	width: 150px;
+	width: 100px;
 	text-decoration: none;
 	color: #b2c8c7;
 	display:block;
@@ -136,12 +138,12 @@ ul
     list-style-type: none;
     padding:0px;
     width: 100%;
-    margin-top: 0px;
+    margin-top: -21px;
 }
 
 .list-options-container {
 	width:100%;
-	height: 60px;
+	height: 80px;
 	margin-bottom: 0px;
 	line-height: 30px;
 }
@@ -156,7 +158,7 @@ ul
 	width: 35%;
 	height: 30px;
 
-	color: #b2c8c7;
+	color: #93cfd8;
 	border-style:solid;
 	border-width:5px;
 
@@ -178,7 +180,7 @@ ul
 	width: 35%;
 	height: 30px;
 
-	color: #b2c8c7;
+	color: #93cfd8;
 	border-style:solid;
 	border-width:5px;
 
@@ -219,20 +221,72 @@ hr {
 	width: 92%;
 }
 
+.store{
+	position: relative;
+    z-index: 1;
+    height: 150px;
+    margin-bottom: 10px;
+    color: white;
+}
 
 
+.store h1  {
+	position: relative;
+	top: 100px;
+	opacity: 1.0;
+	font-size: 20px;
+	font-weight: 200;
 
+}
+.store h2  {
+	position: relative;
+	top: 85px;
+	opacity: 1.0;
+	font-size: 15px;
+	font-weight: 200;
+}
 
+.stores {
+	position: absolute;
+}
 
+.filter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -99;
+}
 
+.pie-container {
+	float:right;
+	font-size: 20px;
+	font-weight: 200;
+	
+	border-radius: 5px 20px 5px;
+  	background: #035d67;
+  	opacity: .8;
+	
+	position: relative;
+	top: 20px;
+	right: 30px;
+	width: 70px;
+	
+	text-align: center;
 
+}
 
+.items-label{
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
 
-
-
-
-
-
+.items-in-stock {
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
 
 
 

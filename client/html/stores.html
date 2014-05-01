@@ -2,9 +2,21 @@
   <ul class="stores">
     {{#each this }}
     <li class="store" data-id="{{ _id }}">
-      <h1>{{ name }} {{ price }}</h1>
+
+      <div class="filter" style="background: url({{ cover }}) no-repeat;"></div>
+      
+      <div class="pie-container">
+      	<p class="items-in-stock">{{ items_in_stock }}</p>
+
+      	<p class="items-label">items</p>
+      </div>
+
+      <h1>{{ name }}</h1>
       <h2>{{ address }} ({{ distance }})</h2>
+
+    
     </li>
     {{/each }}
   </ul>
 </template>
+
