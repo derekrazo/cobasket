@@ -7,8 +7,13 @@ Meteor.startup(function () {
       address: "1444 Shattuck Place, Berkeley",
       distance: "0.5 mi",
       cover: "./images/store3.png",
-      items_in_stock: "6 / 6"
+      items_in_stock: "6 / 6",
+      inventory: {
+        2: ['egg', 'milk'],
+        3: ['joy', 'love']
+      },
     });
+
     Stores.insert({
       _id: "1",
       name: "Berkeley Bowl $$",
@@ -16,8 +21,13 @@ Meteor.startup(function () {
       address: "920 Heinz Ave, Berkeley",
       distance: "2 mi",
       cover: "./images/store3.png",
-      items_in_stock: "3 / 6"
-
+      items_in_stock: "3 / 6",
+      inventory: {
+        2: ['apple'],
+        3: ['pear'],
+        4: ['strawberry'],
+        5: ['raspberry'],
+      },
     });
     Stores.insert({
       _id: "2",
@@ -26,8 +36,13 @@ Meteor.startup(function () {
       address: "3000 Telegraph Ave, Berkeley",
       distance: "3 mi",
       cover: "./images/store3.png",
-      items_in_stock: "2 / 6"
-
+      items_in_stock: "2 / 6",
+      inventory: {
+        2: ['rice'],
+        3: ['beans'],
+        4: ['egg'],
+        5: ['milk'],
+      },
     });
   }
 })
