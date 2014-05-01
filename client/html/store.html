@@ -8,15 +8,22 @@
     </nav>
 
     {{#if storeViewMode }}
+
     {{> storeMap }}
+
     {{else }}
-    {{> storeList }}
+
+      {{#each arrayify inventory }}
+        <h2>Aisle #{{ key }}</h2>
+        <ul>
+          <li>
+            {{ value }}
+          </li>
+        </ul>
+      {{/each }}
+
     {{/if }}
   </div>
-</template>
-
-<template name="storeList">
-  such list.
 </template>
 
 <template name="storeMap">
