@@ -9,17 +9,8 @@ html, body {
 main {
 	height: 100%;
 	width:100%;
-	background: url(./images/background_cat.png);
 	background-size: 100% 100%;
 
-}
-
-.landingImage {
-	width: 100%;
-	height: 100%;
-	background-image: url("./images/view1.png");
-	background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /*
@@ -98,128 +89,13 @@ main {
 	color: #bfbfbf;
 }
 
-/*
 
-		FOOTER
-
-*/
-
-.footer-container {
-	width: 100%;
-	height: 30px;
-	background-color: #4c868f;
-	position: fixed;
-	bottom: 0;
-}
-
-.footer-container > a {
-	position: relative;
-	top: 15%;	
-	width: 100px;
-	text-decoration: none;
-	color: #b2c8c7;
-	display:block;
-	margin: 0 auto;
-}
-
-#arrow {
-	top: 38%;
-	left: 47%;
-}
 
 /*
 
-		ENTER LIST ITEMS
+		STORE List
 
 */
-
-ul
-{
-    list-style-type: none;
-    padding:0px;
-    width: 100%;
-    margin-top: -21px;
-}
-
-.list-options-container {
-	width:100%;
-	height: 80px;
-	margin-bottom: 0px;
-	line-height: 30px;
-}
-
-.add {
-	position: relative;
-	left: 30px;
-	top: 15px;
-
-	cursor: pointer;
-	
-	width: 35%;
-	height: 30px;
-
-	color: #93cfd8;
-	border-style:solid;
-	border-width:5px;
-
-	text-align: center;
-
-	float: left;
-}
-
-
-.import {
-
-	position: relative;
-	right: 30px;
-	top: 15px;
-	float: right;
-
-	cursor: pointer;
-	
-	width: 35%;
-	height: 30px;
-
-	color: #93cfd8;
-	border-style:solid;
-	border-width:5px;
-
-	text-align: center;
-
-
-
-}
-
-.remove {
-	float:right;
-	position: relative;
-	right: 5%;
-	cursor: pointer;
-}
-
-li {
-	position: relative;
-	top: 10px;
-}
-
-input {
-	border-style: none;
-	font-size: 13px;
-	position:relative;
-	left: 5%;
-	color: #8c8c8c;
-	background: transparent;
-    border: none;
-    height: 30px;
-}
-
-hr {
-	color: #9bbcbd;
-	background-color: #9bbcbd;
-	position:relative;
-	text-align: center;
-	width: 92%;
-}
 
 .store{
 	position: relative;
@@ -227,6 +103,7 @@ hr {
     height: 150px;
     margin-bottom: 10px;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -236,6 +113,7 @@ hr {
 	opacity: 1.0;
 	font-size: 20px;
 	font-weight: 200;
+
 
 }
 .store h2  {
@@ -248,6 +126,7 @@ hr {
 
 .stores {
 	position: absolute;
+	top: 60px;
 }
 
 .filter {
@@ -289,5 +168,161 @@ hr {
 }
 
 
+/*
+
+		IN STORE VIEW
+
+*/
+.storeView {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+nav {
+	width: 220px;
+	height: 35px;
+	position: relative;
+	top: 10px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+
+}
+
+nav > div {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100%;
+	line-height: 35px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+	margin-bottom: 20px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.listMode {
+	background-color: #7da8ae;
+}
+
+.mapMode {
+	background-color: #b6ced1;
+}
+
+.addNewItem {
+	border: none;
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+	color: #b6ced1;
+	font-weight: 100;
+	text-align: center;
+}
+
+.addNewItem::-webkit-input-placeholder {
+	color: #b6ced1;
+	position: relative;
+	left: 10px;
+}
+
+::-webkit-input-placeholder {
+	font-weight: 100;
+	font-style: italic;
+	text-align: center;
+	color: #0C86F3;
+}
+
+.storeView {
+
+}
+
+.storeView > h2 {
+	color: #7da8ae;
+	font-weight: 300;
+	font-size: 30px;
+	position: relative;
+	left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.storeView > ul > li {
+	color: #949494;
+	font-weight: 300;
+	font-size: 20px;
+	position: relative;
+	left: 10%;
+	margin-bottom: 5px;
+	width: 90%;
+
+}
+
+#underAisle {
+	color: #9bbcbd;
+	background-color: #9bbcbd;
+	position:relative;
+	left: 0px;
+	width: 80%;
+	margin-left: 0px;
+	margin-right: 10px; 
+}
+
+.aisle.footer-container > a {
+	position: relative;
+	top: 15%;	
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	color: #b2c8c7;
+	display:block;
+	margin: 0 auto;
+}
+
+#notInStore {
+	color: #7da8ae;
+	font-weight: 300;
+	font-size: 30px;
+	position: relative;
+	left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#storeLayout {
+	width: 97%;
+	height: 230px;
+	position: relative;
+	top: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#whitespace {
+	position: relative;
+	background-color: white;
+	width:100%;
+	height: 50px;
+	top: 10px;
+}
+
+#entrance {
+	position: relative;
+	background-color: #e0e0e0;
+	width:80px;
+	height: 30px;
+	line-height: 28px;	
+	color: white;
+	left: 15px;
+	padding-left: 11px;
+	top: -32px;
+}
 
 

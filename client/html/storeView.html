@@ -1,0 +1,53 @@
+<template name="basket_view">
+  <div class="basket_view">
+    
+
+    <!--<h1>{{ name }}</h1>-->
+
+    <nav>
+      <div class="listMode">list view</div>
+      <div class="mapMode">map view</div>
+    </nav>
+
+    <input class="addNewItem" placeholder="Add More Items!"/>
+
+    {{#if basket_viewMode }}
+
+    {{> storeMap }}
+
+    {{else }}
+
+      {{#each arrayify inventory }}
+        <h2>Aisle {{ key }}</h2>
+        <ul>
+          {{#each arrayify value}}
+          <li>
+            <input type="checkbox">
+            {{ value }}
+            <hr id="underAisle" />
+          </li>
+          {{/each}}
+        </ul>
+      {{/each }}
+
+    {{/if }}
+  </div>
+
+
+
+  {{> aisleFooter}}
+
+</template>
+
+<template name="storeMap">
+  <img id="storeLayout" src="../../images/map_view.png" />
+  <div id="whitespace"> </div>
+  <div id="entrance"> entrance</div>
+</template>
+
+<template name="aisleFooter">
+  <div class="aisle footer-container">
+    <a href="{{pathFor 'stores'}}" id="byStore">Find Another Store!</a>
+    <!--<a href="" id="arrow">^</a>-->
+  </div>
+</template>

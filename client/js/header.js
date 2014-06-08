@@ -3,3 +3,7 @@ Template.header.events({
     List.remove({})
   },
 });
+
+Template.header.header = function() {
+
+}

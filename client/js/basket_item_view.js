@@ -1,4 +1,29 @@
-Template.store.helpers({
+Template.basket_item_view.helpers({
+  arrayify: function (obj) {
+    result = [];
+    for (var key in obj) {
+      result.push({
+        key: key,
+        value: obj[key],
+      });
+    }
+    return result;
+  }
+});
+
+
+Template.basket_item_view.events({
+  
+});
+
+Template.list.basket_item_view = function() {
+  
+}
+
+
+/*
+
+Template.basket_item_view.helpers({
   storeViewMode: function () {
     return Session.get("storeViewMode") || false;
   },
@@ -15,7 +40,7 @@ Template.store.helpers({
 });
 
 
-Template.store.events({
+Template.storeView.events({
   'click .listMode': function () {
     Session.set("storeViewMode", false);
   },
@@ -23,3 +48,5 @@ Template.store.events({
     Session.set("storeViewMode", true);
   },
 });
+
+*/

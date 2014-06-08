@@ -10,15 +10,22 @@ Meteor.startup(function () {
       path: '/',
       layoutTemplate: 'nolayout',
     });
-    this.route('list', {
-      data: function () { return List.find(); }
+    this.route('baskets', {
+      data: function () { return Baskets.find();
+      }
     });
-    this.route('stores', {
-      data: function () { return Stores.find(); }
+    this.route('basket_view', {
+      data: function () { return Baskets.find();
+       }
     });
-    this.route('store', {
-      path: "store/:id",
-      data: function () { return Stores.findOne(this.params.id); }
+    this.route('basket_item_view', {
+      path: "basket_item_view/:id",
+      data: function () { 
+        return Basket_items.findOne(this.params.id); }
     })
   });
 });
+
+Template.list.rendered = function() {
+
+}

@@ -1,21 +1,30 @@
-Template.list.events({
+Template.baskets.events({
 
   'click .add': function (e) {
-    List.insert({
+    Baskets.insert({
       name: "new",
     })
   },
 
   'click .remove': function (e) {
     var id = e.currentTarget.dataset.id;
-    List.remove(id)
+    Baskets.remove(id)
   },
 
-  'input .item': function (e) {
+});
+
+Template.list.rendered = function() {
+
+}
+
+/*
+
+'input .item': function (e) {
     var id = e.currentTarget.dataset.id;
-    List.update(id,
+    Baskets.update(id,
     {
       name: e.currentTarget.value
     });
   },
-});
+
+*/
