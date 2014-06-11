@@ -6,7 +6,7 @@ Meteor.startup(function () {
     },
   })
 	Router.map(function () {
-    this.route('landing', {
+    this.route('layout', {
       path: '/',
       layoutTemplate: 'nolayout',
     });
@@ -14,18 +14,14 @@ Meteor.startup(function () {
       data: function () { return Baskets.find();
       }
     });
-    this.route('basket_view', {
-      data: function () { return Baskets.find();
+    this.route('basket_items', {
+      data: function () { return Basket_items.find();
        }
     });
-    this.route('basket_item_view', {
-      path: "basket_item_view/:id",
+    this.route('basket_item', {
+      path: "basket_item/:id",
       data: function () { 
         return Basket_items.findOne(this.params.id); }
     })
   });
 });
-
-Template.list.rendered = function() {
-
-}

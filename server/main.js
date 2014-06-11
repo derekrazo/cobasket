@@ -17,11 +17,36 @@ Meteor.startup(function () {
       name: "Whole Foods $$$$",
       price: 4,
     });
+
+    Baskets.insert({
+      _id: "0",
+      name: "Summit Residence Monthly Food Delivery",
+      members: {
+          0 : "Derek Razo",
+          1 : "Michael Williams"
+      }
+    });
+
+    Baskets.insert({
+      _id: "1",
+      name: "E-textiles Bulk-buyers Basket",
+      members: {
+          0 : "Derek Razo",
+          1 : "Michael Williams"
+      }
+    });
+
+    Baskets.insert({
+      _id: "2",
+      name: "West Berkeley Artists Collective",
+      members: {
+          0 : "Derek Razo",
+          1 : "Michael Williams"
+      }
+    });
   }
-
-
-
 })
+
 
 
 /*

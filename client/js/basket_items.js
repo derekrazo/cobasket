@@ -1,13 +1,11 @@
 Template.basket_items.events({
   'click .basket_item': function (e) {
     var id = e.currentTarget.dataset.id;
-    Router.go('item_view', { id: id });
+    Router.go('basket_item', { id: id });
   },
 });
 
-Template.stores.rendered = function() {
 
-}
 
 
 /*

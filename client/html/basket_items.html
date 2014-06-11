@@ -1,0 +1,22 @@
+<template name="basket_items">
+  <ul class="basket_items">
+    {{#each this }}
+    <li class="basket_item" data-id="{{ _id }}">
+
+      <div class="filter" style="background: url({{ cover }}) no-repeat;"></div>
+      
+      <div class="pie-container">
+      	<p class="items-in-stock">{{ items_in_stock }}</p>
+
+      	<p class="items-label">items</p>
+      </div>
+
+      <h1>{{ name }}</h1>
+      <h2>{{ address }} ({{ distance }})</h2>
+
+    
+    </li>
+    {{/each }}
+  </ul>
+</template>
+

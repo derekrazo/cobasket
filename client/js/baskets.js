@@ -6,16 +6,12 @@ Template.baskets.events({
     })
   },
 
-  'click .remove': function (e) {
-    var id = e.currentTarget.dataset.id;
-    Baskets.remove(id)
+  'click .basket': function (e) {
+    Router.go('basket_items');
   },
 
 });
 
-Template.list.rendered = function() {
-
-}
 
 /*
 
