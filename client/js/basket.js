@@ -1,4 +1,4 @@
-Template.basket_items.events({
+Template.basket.events({
   'click .basket_item': function (e) {
     var id = e.currentTarget.dataset.id;
     Router.go('basket_item', { id: id });

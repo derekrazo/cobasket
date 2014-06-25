@@ -1,4 +1,4 @@
-Template.baskets.events({
+Template.baskets.events({ 
 
   'click .add': function (e) {
     Baskets.insert({
@@ -6,8 +6,9 @@ Template.baskets.events({
     })
   },
 
-  'click .basket': function (e) {
-    Router.go('basket_items');
+  'click .basket-container': function (e) {
+    var id = e.currentTarget.dataset.id;
+    Router.go('basket', { id: id });
   },
 
 });

@@ -1,4 +1,11 @@
 Meteor.startup(function () {
+
+  // client
+  Meteor.subscribe('Baskets');
+
+ 
+
+
   Router.configure({
     layoutTemplate: 'layout',
     yieldTemplates: {
@@ -11,11 +18,17 @@ Meteor.startup(function () {
       layoutTemplate: 'nolayout',
     });
     this.route('baskets', {
-      data: function () { return Baskets.find();
+      data: function () { 
+        return Baskets.find();
       }
     });
-    this.route('basket_items', {
-      data: function () { return Basket_items.find();
+    this.route('basket', {
+      path: "basket/:id",
+      before: function(){
+        this.subscribe('Basket_items');
+      },
+      data: function () { 
+        return Basket_items.find({basket:this.params.id});
        }
     });
     this.route('basket_item', {

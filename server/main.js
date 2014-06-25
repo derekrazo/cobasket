@@ -1,21 +1,39 @@
 Meteor.startup(function () {
   if (Basket_items.find().count() === 0) {
+    
     Basket_items.insert({
       _id: "0",
       name: "Apples",
       price: 4,
+      basket: "1",
     });
 
     Basket_items.insert({
       _id: "1",
       name: "Oranges",
       price: 4,
+      basket: "1",
     });
 
     Basket_items.insert({
       _id: "2",
-      name: "Whole Foods $$$$",
+      name: "Almonds",
       price: 4,
+      basket: "1",
+    });
+
+    Basket_items.insert({
+      _id: "3",
+      name: "Pears",
+      price: 4,
+      basket: "0",
+    });
+
+    Basket_items.insert({
+      _id: "4",
+      name: "Plumbs",
+      price: 4,
+      basket: "2",
     });
 
     Baskets.insert({

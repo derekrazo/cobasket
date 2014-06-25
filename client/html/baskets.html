@@ -2,8 +2,9 @@
 
   <ul>
   {{#each this}}
-    <li class="basket">
-        {{name}}
+    <li class="basket-container" data-id="{{ _id }}">
+    	<img src="./images/hay_field.jpg" alt="" />
+        <p class="basket-title">{{name}}</p>
     </li>
   {{/each}}
   </ul>
