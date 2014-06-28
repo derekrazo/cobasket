@@ -132,6 +132,7 @@ main {
 }
 
 
+
 /*
 
 		STORE List
@@ -189,7 +190,7 @@ main {
   	opacity: .8;
 	
 	position: relative;
-	top: 20px;
+	top: 0px;
 	right: 30px;
 	width: 70px;
 	
@@ -208,6 +209,49 @@ main {
 	margin-bottom: 0px;
 }
 
+.basket_items {
+	margin-top: 0px;
+}
+
+.basket_item {
+	list-style: none;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+	width:300px;
+	/*box-shadow: 1px 1px 1px #888888;*/
+	float: left;
+
+}
+
+.basket_item > img {
+	width: 300px;
+	height: 225px;
+}
+
+.basket_item > h1 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 20px;
+}
+
+.basket_item > .started_by {
+	float: left;
+	margin-top: 18px;
+	font-size: 12px;
+}
+
+.upvote {
+	width: 100%;
+	height: 40px;
+	background-color: #00b5db;
+	border-radius: 3px;
+	color: white;
+	font-weight: 15px;
+	text-align: center;
+	line-height: 40px;
+}
 
 /*
 

@@ -3,9 +3,6 @@ Meteor.startup(function () {
   // client
   Meteor.subscribe('Baskets');
 
- 
-
-
   Router.configure({
     layoutTemplate: 'layout',
     yieldTemplates: {

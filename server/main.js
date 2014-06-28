@@ -6,6 +6,9 @@ Meteor.startup(function () {
       name: "Apples",
       price: 4,
       basket: "1",
+      likes: 9,
+      image_url: "http://mccutcheonsblog.files.wordpress.com/2011/09/red_delicious_apple.jpg",
+      started_by: "Derek Razo",
     });
 
     Basket_items.insert({
@@ -13,6 +16,9 @@ Meteor.startup(function () {
       name: "Oranges",
       price: 4,
       basket: "1",
+      likes: 4, 
+      image_url: "http://www.bonappetit.com/wp-content/uploads/2013/07/ttar_orange_01_h_launch.jpg",
+      started_by: "Derek Razo",
     });
 
     Basket_items.insert({
@@ -20,6 +26,9 @@ Meteor.startup(function () {
       name: "Almonds",
       price: 4,
       basket: "1",
+      likes: 2, 
+      image_url: "http://bongotimes.com/wp-content/uploads/2014/03/almonds.jpg",
+      started_by: "Derek Razo",
     });
 
     Basket_items.insert({
@@ -27,6 +36,9 @@ Meteor.startup(function () {
       name: "Pears",
       price: 4,
       basket: "0",
+      likes: 10, 
+      image_url: "http://eofdreams.com/data_images/dreams/pear/pear-06.jpg",
+      started_by: "Derek Razo",
     });
 
     Basket_items.insert({
@@ -34,6 +46,9 @@ Meteor.startup(function () {
       name: "Plumbs",
       price: 4,
       basket: "2",
+      likes: 4, 
+      image_url: "http://patagoniaorganics.com/products/images/stories/products/plums/plumbs-larry-anne.jpg",
+      started_by: "Derek Razo",
     });
 
     Baskets.insert({

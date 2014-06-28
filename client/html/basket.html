@@ -1,18 +1,13 @@
 <template name="basket">
   <ul class="basket_items">
     {{#each this }}
-    <li class="basket_item" data-id="{{ _id }}">
-
-      <div class="pie-container">
-      	<p class="items-in-stock">{{ items_in_stock }}</p>
-
-      	<p class="items-label">items</p>
-      </div>
+    <li class="basket_item">
 
       <h1>{{ name }}</h1>
-      <h2>{{ address }} ({{ distance }})</h2>
-
-    
+      <div class="started_by">Started by {{ started_by }}</div>
+      <img src="{{ image_url }}" data-id="{{ _id }}" />
+      <div class="upvote">Vote</div>
+      
     </li>
     {{/each }}
   </ul>

@@ -1,5 +1,5 @@
 Template.basket.events({
-  'click .basket_item': function (e) {
+  'click .basket_item > img': function (e) {
     var id = e.currentTarget.dataset.id;
     Router.go('basket_item', { id: id });
   },
