@@ -1,4 +1,12 @@
 <template name="basket">
+
+  <div id="add_basket_item">Add Item</div>
+
+  <form id="add_basket_item_form" action="">
+    Item Name: <input id="add_item_name" type="text" name="name"><br>
+    Item Image URL: <input id="add_item_image_url" type="text" name="image_url"><br>
+  </form>
+
   <ul class="basket_items">
     {{#each this }}
     <li class="basket_item">
